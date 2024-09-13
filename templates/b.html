@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Prediction Result</title>
+</head>
+<body>
+    <h1>Heart Disease Prediction Result</h1>
+    <p>The predicted result is: {{ res }}</p>
+    {% if res %}
+        <p style="color: red;">You are likely to have a heart disease.</p>
+    {% else %}
+        <p style="color: green;">You are not likely to have a heart disease.</p>
+    {% endif %}
+    <p><a href="/">Go back to input page</a></p>
+</body>
+</html>
